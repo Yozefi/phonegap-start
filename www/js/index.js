@@ -48,58 +48,72 @@
     }
 };*/
 
-	window.onload = function(){
-    var canvas = document.getElementById("myCanvas");
-    var gc = canvas.getContext("2d");
+	// Basic Template
+	// CBP 15-06-13
+	
+     var canvas;
+     var gc;
 		
-			gc.rect(0,0,1000,50);
-			gc.rect(0,0,50,1000);	
-			gc.fillstyle = "#000";
-			gc.fill();
-			gc.beginPath();
-			gc.rect(50,50,1000,50);	
-			gc.rect(50,50,50,1000);
-			gc.fillStyle = "#2F4F4F";	
-			gc.fill();
-			gc.beginPath();
-			gc.rect(100,100,1000,50);	
-			gc.rect(100,100,50,1000);	
-			gc.fillStyle = "#708090";	
-			gc.fill();
-			gc.beginPath();
-			gc.rect(150,150,1000,50);
-			gc.rect(150,150,50,1000);			
-			gc.fillStyle = "#778899";	
-			gc.fill();
-			gc.beginPath();
-			gc.rect(200,200,1000,50);
-			gc.rect(200,200,50,1000);			
-			gc.fillStyle = "#696969";	
-			gc.fill();
-			gc.beginPath();
-			gc.rect(250,250,1000,50);
-			gc.rect(250,250,50,1000);			
-			gc.fillStyle = "#808080";	
-			gc.fill();
-			gc.beginPath();
-			gc.rect(300,300,1000,50);
-			gc.rect(300,300,50,1000);			
-			gc.fillStyle = "#A9A9A9";	
-			gc.fill();
-			gc.beginPath();
-			gc.rect(350,350,1000,50);
-			gc.rect(350,350,50,1000);			
-			gc.fillStyle = "#C0C0C0";	
-			gc.fill();
-			gc.beginPath();
-			gc.rect(400,400,1000,50);
-			gc.rect(400,400,50,1000);			
-			gc.fillStyle = "#D3D3D3";	
-			gc.fill();
-			gc.beginPath();
-			gc.rect(450,450,1000,100);
-			gc.rect(450,450,100,1000);			
-			gc.fillStyle = "#DCDCDC";	
-			gc.fillStyle = "#DCDCDC";	
-			gc.fill();
-  };
+    //images
+    var background;
+    var fish;
+    var fishRev;
+	var XFishLoc;
+	var XFishVelo;
+	var DT;
+	var rFish;
+	var CanvasW=480;
+    var messageArray = [];		
+	
+	window.onload = function(){
+		XFishLoc = 0;
+		XFishVelo = 0.1;
+		DT = 30;
+		rFish=false;
+		// Init canvas and graphics context
+		canvas = document.getElementById("myCanvas");
+		gc = canvas.getContext("2d");
+		
+		//load images
+		background = document.getElementById("fishtank");
+		fish = document.getElementById("fish");
+		fishRev = document.getElementById("fishRev");	
+		//setting interval for animation
+		window.setInterval(computeAndRender,DT);
+		computeAndRender();
+		
+                 };	
+
+	// compute and render.
+	function computeAndRender() {
+    
+		compute();			
+		render();
+	}
+		
+	function compute() {
+	XFishLoc += XFishVelo*DT;
+	if (XFishLoc+fish.width >=CanvasW){
+		rFish=true;
+			XFishVelo = -1.0*XFishVelo;
+			}	
+		if (XFishLoc <=0){
+			rFish=false;
+		XFishVelo=0.1;
+		compute();
+	}			
+	}
+		
+
+		
+	function render() {
+	gc.drawImage(background,0,0);
+		//gc.drawImage(fish,XFishLoc,100);
+	if (rFish==false){
+		gc.drawImage(fish,XFishLoc,100);
+	}
+		if (rFish==true){
+		gc.drawImage(fishRev,XFishLoc,100);
+	}
+	}
+		
