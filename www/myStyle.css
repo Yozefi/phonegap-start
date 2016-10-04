@@ -1,0 +1,105 @@
+    body
+    {
+    background-color: #787878;
+    font:1em/1.2;
+    font-family:"Trebuchet MS", Helvetica, sans-serif;
+    color:#aad4e5;
+    }
+	h1 {
+		font-size:3em;
+	}
+	#Title {
+	max-width: 50em;
+	margin: 0 auto;
+	}
+    #container
+    {
+	max-width: 50em;
+	margin: 0 auto;
+    padding-bottom: 0.7em;
+	background-color: #787878;
+	border:0.2em solid #aad4e5;
+    border-radius:1em;
+    padding:1em;
+    height: 30em;
+    max-height: 30em;
+    }
+    #player
+    {
+        max-width: 50em;
+        margin: 0 auto;            
+        background-color: #787878;
+        border-radius:1em;
+    }
+    .button 
+    {
+        background-color: #787878;
+        border-color:black;
+        border:0.2em solid #aad4e5;
+        border-radius:1em;
+        height: 2em;
+        width: auto;
+        font-family:"Trebuchet MS", Helvetica, sans-serif;
+		color:#aad4e5;
+        font-size: 1.2em;
+        margin-top: 1em;
+        padding-left:0.7em; 
+    }
+	   .LButton 
+    {
+        background-color: #787878;
+        border-color:black;
+        border:0.2em solid #aad4e5;
+        border-radius:1em;
+        height: 2em;
+        width: auto;
+        font-family:"Trebuchet MS", Helvetica, sans-serif;
+		color:#aad4e5;
+        font-size: 1.2em;
+        margin-top: 1em;
+     
+		text-align:center;
+    }
+    input:hover{border: solid #fff; color: #fff;}
+	
+         
+         .eng { 
+
+		 color:#ffffff;
+		 }
+         .icelandic,.ice {
+		 width:100px;
+		 height:auto;
+		 float:right;
+		 padding:10px;
+		 margin:10px;
+		 }
+		 .ice{border:0.2em solid #aad4e5;border-radius:1em;}
+		 #Left{
+		 background-color: #787878; 
+		 width:75px;
+		 height:auto;
+		 float:left;
+		 padding:10px;
+		 margin:10px; 
+		 }
+		 #Right{
+		 background-color: #787878;
+		 width:100px;
+		 height:20em;
+		 float:right;
+		 padding:10px;
+		 margin:10px;
+		 }
+	#items{
+text-align:center; 
+	}
+	
+	table {
+	width: 100%;
+	text-align: center;
+}
+td,th{
+	border-bottom: 0.1em solid #787878;
+}
+tr:hover {background-color: #aad4e5;color:#787878;}
