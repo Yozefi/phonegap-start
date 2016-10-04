@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
-    <head>
-	<title>Learning Icelandic - Læra Íslensku</title>
-	<meta http-equiv="Content-type" content="text/html; charset=UTF-8"/>
+    <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Learning Icelandic - Læra íslensku</title>
+	
 	<link rel="stylesheet" href="myStyle.css">
 	<link rel="stylesheet" href="themes/alertify.core.css">
 	<link rel="stylesheet" href="themes/alertify.bootstrap.css">
@@ -11,23 +11,24 @@
     </head>
     <body id="body">
 	<div id="Title">
-	<h1>Learning Icelandic - Læra Íslensku</h1>
+	<h1>Learning Icelandic - Læra íslensku</h1>
 	</div>
         <div id="container">
 		<div id="items"></div>
-		Click on the buttons below to start learning and test yourself blah blah explaination stoooof
+		<h3>Welcome to Learning Icelandic Online</h3><br>
+		<p>Learning Icelandic Online is an online learning tool created to help you learn some essential words and phrases you might need on your travels.</p><br>
+		<p>Click the buttons below to start learning.</p>
         </div>
         <div id="player">
             
-				<input class="button" value="Learn New Words and Phrases" type="button" onclick="load_learn()">
-                <input class="button" value="Test Your Knowledge" type="button" onclick="load_quiz()">
-				<input class="button" value="Review Words and Phrases" type="button" onclick="load_review()">
+				<input id="B1" class="button" value="Learn New Words and Phrases" type="button" onclick="load_learn()">
+                <input id="B2" class="button" value="Test Your Knowledge" type="button" onclick="load_quiz()">
+				<input id="B3" class="button" value="Review Words and Phrases" type="button" onclick="load_review()">
            
         </div>
-           <script type="text/javascript" src="cordova.js"></script>
+              <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript">
            app.initialize();
     </body>
-    
 </html>

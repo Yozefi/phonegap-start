@@ -7,10 +7,10 @@
         version   = "6.0">
     <platform name="android"/>
 
-    <name>Week 1 Application</name>
+    <name>Learning Application</name>
 
     <description>
-        Hello World sample application that responds to the deviceready event.
+       Learning Icelandic Application 
     </description>
 
     <author href="" email="phej1_15@uni.worc.ac.uk">

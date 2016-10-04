@@ -59,9 +59,10 @@ var Q3R=[
 '<div id="I2" class="ice" style="background-color:blue;width:126px;height:66px; ondragenter="return dragEnter(event)" ondrop="return dragDrop(event)" ondragover="return dragOver(event)"></div>',
 '<div id="I3" class="ice" style="background-color:green;width:126px;height:66px; ondragenter="return dragEnter(event)" ondrop="return dragDrop(event)" ondragover="return dragOver(event)"></div>'
 ]
-//Variables for Drap and Drop
+//Variables for Drag and Drop
 var ans;
 var src;
+//Variables for the Review Section
 var Table=[
 '<table><tr><th>English</th><th>Icelandic</th><th>Pronounciation</th></tr>',
 '</table>'
