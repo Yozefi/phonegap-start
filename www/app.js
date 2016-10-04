@@ -270,7 +270,7 @@ function load_review(){
 	}
 }	
 //Holds data of the element being dragged		
-function touchstart(ev) {
+function dragStart(ev) {
 	ev.dataTransfer.effectAllowed='move';
 	ev.dataTransfer.setData("Text", ev.target.getAttribute('id'));
 	ev.dataTransfer.setDragImage(ev.target,0,0);
@@ -285,7 +285,7 @@ function dragOver(ev){
 return false;
 } 
 //Run when an element is dropped into a dropzone
-function touchend(ev){	
+function dragDrop(ev){	
 	//setting the id and data of the source and target elements to variables
 	ans=ev.target.getAttribute('id');
 	src=ev.dataTransfer.getData("Text");
