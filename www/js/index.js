@@ -16,7 +16,7 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-var app = {
+/*var app = {
     // Application Constructor
     initialize: function() {
         this.bindEvents();
@@ -46,4 +46,60 @@ var app = {
 
         console.log('Received Event: ' + id);
     }
-};
+};*/
+
+	window.onload = function(){
+    var canvas = document.getElementById("myCanvas");
+    var gc = canvas.getContext("2d");
+		
+			gc.rect(0,0,1000,50);
+			gc.rect(0,0,50,1000);	
+			gc.fillstyle = "#000";
+			gc.fill();
+			gc.beginPath();
+			gc.rect(50,50,1000,50);	
+			gc.rect(50,50,50,1000);
+			gc.fillStyle = "#2F4F4F";	
+			gc.fill();
+			gc.beginPath();
+			gc.rect(100,100,1000,50);	
+			gc.rect(100,100,50,1000);	
+			gc.fillStyle = "#708090";	
+			gc.fill();
+			gc.beginPath();
+			gc.rect(150,150,1000,50);
+			gc.rect(150,150,50,1000);			
+			gc.fillStyle = "#778899";	
+			gc.fill();
+			gc.beginPath();
+			gc.rect(200,200,1000,50);
+			gc.rect(200,200,50,1000);			
+			gc.fillStyle = "#696969";	
+			gc.fill();
+			gc.beginPath();
+			gc.rect(250,250,1000,50);
+			gc.rect(250,250,50,1000);			
+			gc.fillStyle = "#808080";	
+			gc.fill();
+			gc.beginPath();
+			gc.rect(300,300,1000,50);
+			gc.rect(300,300,50,1000);			
+			gc.fillStyle = "#A9A9A9";	
+			gc.fill();
+			gc.beginPath();
+			gc.rect(350,350,1000,50);
+			gc.rect(350,350,50,1000);			
+			gc.fillStyle = "#C0C0C0";	
+			gc.fill();
+			gc.beginPath();
+			gc.rect(400,400,1000,50);
+			gc.rect(400,400,50,1000);			
+			gc.fillStyle = "#D3D3D3";	
+			gc.fill();
+			gc.beginPath();
+			gc.rect(450,450,1000,100);
+			gc.rect(450,450,100,1000);			
+			gc.fillStyle = "#DCDCDC";	
+			gc.fillStyle = "#DCDCDC";	
+			gc.fill();
+  };
